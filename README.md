@@ -5,6 +5,7 @@
 Run docker with the `python:3.13` image. Use an entrypoint `bash` to interact with the container.
 
 What's the version of `pip` in the image?
+
 ANS: 25.3
 
 --> To run docker with python:3.13 image used this shell command
@@ -20,11 +21,13 @@ pip --version
 ## Question 2. Understanding Docker networking and docker-compose
 
 Given the following `docker-compose.yaml`, what is the `hostname` and `port` that pgadmin should use to connect to the postgres database?
+
 ANS: db:5432
 
 ## Question 3. Counting short trips
 
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a `trip_distance` of less than or equal to 1 mile?
+
 ANS: 8007
 
 ```sql
@@ -58,7 +61,8 @@ LIMIT 1;
 ## Question 5. Biggest pickup zone
 
 Which was the pickup zone with the largest `total_amount` (sum of all trips) on November 18th, 2025?
-ANS:East Harlem North
+
+ANS: East Harlem North
 
 ```sql
 SELECT z."Zone" AS pickup_zone,
@@ -77,7 +81,8 @@ LIMIT 1;
 For the passengers picked up in the zone named "East Harlem North" in November 2025, which was the drop off zone that had the largest tip?
 
 Note: it's `tip` , not `trip`. We need the name of the zone, not the ID.
-ANS:Yorkville West
+
+ANS: Yorkville West
 
 ```sql
 SELECT dz."Zone" AS dropoff_zone,
@@ -103,3 +108,6 @@ Which of the following sequences, respectively, describes the workflow for:
 3. Remove all resources managed by terraform`
 
 ANS: terraform init, terraform apply -auto-approve, terraform destroy
+
+
+## Free course by @DataTalksClub: https://github.com/DataTalksClub/data-engineering-zoomcamp/
