@@ -1,4 +1,4 @@
-# data-engineering-zoomcamp-homework1
+# Data-engineering-zoomcamp-homework1
 
 ## Question 1. Understanding Docker images
 
